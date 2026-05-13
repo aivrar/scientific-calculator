@@ -40,35 +40,39 @@ APP_VERSION = "1.0"
 # THEMES
 # ---------------------------------------------------------------------------
 THEMES = {
-    "Dark": {
-        "bg": "#1e1e2e", "panel": "#252537", "fg": "#e4e4f4",
-        "muted": "#9090b0", "accent": "#7aa2f7", "accent2": "#bb9af7",
-        "btn": "#313244", "btn_hover": "#45475a", "btn_op": "#7aa2f7",
-        "btn_op_fg": "#1e1e2e", "btn_fn": "#f7768e", "btn_fn_fg": "#1e1e2e",
-        "entry": "#181825", "ok": "#9ece6a", "err": "#f7768e",
+    "Dark": {  # Catppuccin Mocha
+        "bg": "#1e1e2e", "panel": "#181825", "fg": "#cdd6f4",
+        "muted": "#7f849c", "accent": "#89b4fa", "accent2": "#cba6f7",
+        "btn": "#313244", "btn_hover": "#45475a",
+        "btn_op": "#89b4fa", "btn_op_fg": "#1e1e2e",
+        "btn_fn": "#45475a", "btn_fn_fg": "#94e2d5",
+        "entry": "#11111b", "ok": "#a6e3a1", "err": "#f38ba8",
         "mpl": "dark_background", "mpl_face": "#1e1e2e",
     },
-    "Light": {
-        "bg": "#f0f0f5", "panel": "#ffffff", "fg": "#1a1a2e",
-        "muted": "#606080", "accent": "#5060d0", "accent2": "#9050c0",
-        "btn": "#e0e0e8", "btn_hover": "#c8c8d8", "btn_op": "#5060d0",
-        "btn_op_fg": "#ffffff", "btn_fn": "#d05060", "btn_fn_fg": "#ffffff",
-        "entry": "#ffffff", "ok": "#208040", "err": "#d04060",
+    "Light": {  # Catppuccin Latte
+        "bg": "#eff1f5", "panel": "#e6e9ef", "fg": "#4c4f69",
+        "muted": "#8c8fa1", "accent": "#1e66f5", "accent2": "#8839ef",
+        "btn": "#ccd0da", "btn_hover": "#bcc0cc",
+        "btn_op": "#1e66f5", "btn_op_fg": "#eff1f5",
+        "btn_fn": "#dce0e8", "btn_fn_fg": "#179299",
+        "entry": "#ffffff", "ok": "#40a02b", "err": "#d20f39",
         "mpl": "default", "mpl_face": "#ffffff",
     },
-    "Synthwave": {
-        "bg": "#241734", "panel": "#2d1b4e", "fg": "#ffeaff",
-        "muted": "#b890c0", "accent": "#ff79c6", "accent2": "#8be9fd",
-        "btn": "#3a2456", "btn_hover": "#553578", "btn_op": "#ff79c6",
-        "btn_op_fg": "#241734", "btn_fn": "#50fa7b", "btn_fn_fg": "#241734",
-        "entry": "#1a0d2e", "ok": "#50fa7b", "err": "#ff5555",
-        "mpl": "dark_background", "mpl_face": "#241734",
+    "Synthwave": {  # refined retrowave
+        "bg": "#1a1a2e", "panel": "#16213e", "fg": "#f4f4f8",
+        "muted": "#8888aa", "accent": "#f72585", "accent2": "#4cc9f0",
+        "btn": "#0f3460", "btn_hover": "#1a4076",
+        "btn_op": "#f72585", "btn_op_fg": "#1a1a2e",
+        "btn_fn": "#1a4076", "btn_fn_fg": "#4cc9f0",
+        "entry": "#0f0f1e", "ok": "#06ffa5", "err": "#ff5555",
+        "mpl": "dark_background", "mpl_face": "#1a1a2e",
     },
-    "Solarized": {
+    "Solarized": {  # canonical Solarized Dark
         "bg": "#002b36", "panel": "#073642", "fg": "#eee8d5",
-        "muted": "#93a1a1", "accent": "#268bd2", "accent2": "#b58900",
-        "btn": "#073642", "btn_hover": "#0d4a59", "btn_op": "#268bd2",
-        "btn_op_fg": "#fdf6e3", "btn_fn": "#d33682", "btn_fn_fg": "#fdf6e3",
+        "muted": "#586e75", "accent": "#268bd2", "accent2": "#b58900",
+        "btn": "#073642", "btn_hover": "#0d4a59",
+        "btn_op": "#268bd2", "btn_op_fg": "#fdf6e3",
+        "btn_fn": "#0d4a59", "btn_fn_fg": "#b58900",
         "entry": "#001f27", "ok": "#859900", "err": "#dc322f",
         "mpl": "Solarize_Light2", "mpl_face": "#002b36",
     },
@@ -580,16 +584,16 @@ class CalcTab(tk.Frame):
         self.const_cb.pack(side="left", padx=4)
         self.const_cb.bind("<<ComboboxSelected>>", self._insert_constant)
 
-        self.display = tk.Entry(self, font=("Cascadia Code", 22, "bold"),
+        self.display = tk.Entry(self, font=("Cascadia Code", 16),
                                 bg=T()["entry"], fg=T()["fg"], insertbackground=T()["fg"],
                                 relief="flat", justify="right")
-        self.display.pack(fill="x", padx=10, pady=4, ipady=12)
+        self.display.pack(fill="x", padx=10, pady=(8, 2), ipady=6)
         self.display.bind("<Return>", lambda e: self._eval())
         self.display.focus_set()
 
         self.result_lbl = tk.Label(self, text="", bg=T()["bg"], fg=T()["accent2"],
-                                   font=("Cascadia Code", 14), anchor="e", justify="right")
-        self.result_lbl.pack(fill="x", padx=10, pady=(0, 6))
+                                   font=("Cascadia Code", 12), anchor="e", justify="right")
+        self.result_lbl.pack(fill="x", padx=10, pady=(0, 4))
 
         # Main panes: button grid (left) + history/memory (right)
         body = tk.Frame(self, bg=T()["bg"])
@@ -598,7 +602,7 @@ class CalcTab(tk.Frame):
         self.grid_frame = tk.Frame(body, bg=T()["bg"])
         self.grid_frame.pack(side="left", fill="both", expand=True)
 
-        side = tk.Frame(body, bg=T()["panel"], width=260)
+        side = tk.Frame(body, bg=T()["panel"], width=240)
         side.pack(side="right", fill="y", padx=(8, 0))
         side.pack_propagate(False)
 
@@ -1009,7 +1013,7 @@ class Graph2DTab(tk.Frame):
         self._build()
 
     def _build(self):
-        ctrl = make_scroll_frame(self, width=300)
+        ctrl = make_scroll_frame(self, width=320)
 
         tk.Label(ctrl, text="2D Plot", bg=T()["panel"], fg=T()["accent"],
                  font=("Segoe UI", 12, "bold")).pack(anchor="w", padx=8, pady=(8, 4))
@@ -1251,7 +1255,7 @@ class Graph3DTab(tk.Frame):
         self._build()
 
     def _build(self):
-        ctrl = make_scroll_frame(self, width=290)
+        ctrl = make_scroll_frame(self, width=320)
         tk.Label(ctrl, text="3D Plot", bg=T()["panel"], fg=T()["accent"],
                  font=("Segoe UI", 12, "bold")).pack(anchor="w", padx=8, pady=(8, 4))
 
@@ -1433,7 +1437,7 @@ class DataTab(tk.Frame):
         self._build()
 
     def _build(self):
-        left = make_scroll_frame(self, width=310)
+        left = make_scroll_frame(self, width=330)
 
         # Drop zone
         zone_msg = "📂  Drop a .csv file here\n(or click to open)"
@@ -1775,10 +1779,10 @@ class DemosTab(tk.Frame):
         self._build()
 
     def _build(self):
-        left = make_scroll_frame(self, width=250)
+        left = make_scroll_frame(self, width=280)
 
         tk.Label(left, text="Visualization Demos", bg=T()["panel"], fg=T()["accent"],
-                 font=("Segoe UI", 12, "bold")).pack(anchor="w", padx=8, pady=(8, 8))
+                 font=("Segoe UI", 11, "bold")).pack(anchor="w", padx=8, pady=(8, 6))
 
         demos = [
             ("🌀  Mandelbrot Set", self.demo_mandelbrot),
@@ -1802,8 +1806,8 @@ class DemosTab(tk.Frame):
         for label, fn in demos:
             b = tk.Button(left, text=label, command=fn, bg=T()["btn"], fg=T()["fg"],
                           activebackground=T()["btn_hover"], activeforeground=T()["fg"],
-                          relief="flat", anchor="w", font=("Segoe UI", 10), padx=12)
-            b.pack(fill="x", padx=8, pady=2, ipady=6)
+                          relief="flat", anchor="w", font=("Segoe UI", 9), padx=8)
+            b.pack(fill="x", padx=6, pady=1, ipady=4)
 
         tk.Button(left, text="⏹  Stop animations", command=self._stop_anim, bg=T()["btn_fn"],
                   fg=T()["btn_fn_fg"], relief="flat", font=("Segoe UI", 10, "bold")).pack(fill="x", padx=8, pady=(20,6), ipady=8)

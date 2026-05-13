@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+!SuperCalc.spec
+
+# Audit / development helpers (not for distribution)
+_audit/
+_audit_screenshots.py
+_capture_docs.py
+_smoke_test.py
+_quick_check.py
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db

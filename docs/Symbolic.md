@@ -2,7 +2,7 @@
 
 A SymPy-powered computer algebra system. Type an expression, pick an operation, get the symbolic result rendered as LaTeX.
 
-![Taylor series of sin(x)/x](images/03_symbolic_series.png)
+<img width="700" alt="Taylor series of sin(x)/x" src="images/03_symbolic_series.png">
 
 ## Operations
 
@@ -40,7 +40,7 @@ The result panel shows the expression three ways:
 2. **LaTeX rendering** — embedded as an image via matplotlib's mathtext.
 3. Click **LaTeX** or **Python** to get raw exportable source.
 
-![Integrate x²·e^(-x²)](images/04_symbolic_integrate.png)
+<img width="700" alt="Integrate x²·e^(-x²)" src="images/04_symbolic_integrate.png">
 
 ## Examples to try
 

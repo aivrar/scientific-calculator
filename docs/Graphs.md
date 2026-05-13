@@ -4,7 +4,7 @@
 
 Six plot kinds, all in one tab. The control panel scrolls if the window is small.
 
-![Explicit plot](images/05_graph2d_explicit.png)
+<img width="700" alt="Explicit plot" src="images/05_graph2d_explicit.png">
 
 ### Plot kinds
 
@@ -28,15 +28,15 @@ Six plot kinds, all in one tab. The control panel scrolls if the window is small
 
 **Polar roses** — `cos(4*theta)` overlaid with `sin(5*theta)`:
 
-![Polar rose](images/06_graph2d_polar.png)
+<img width="700" alt="Polar rose" src="images/06_graph2d_polar.png">
 
 **Vector field** — `-y - 0.1*x ; x - 0.1*y` (damped rotation, with streamlines colored by speed):
 
-![Vector field](images/07_graph2d_vfield.png)
+<img width="700" alt="Vector field" src="images/07_graph2d_vfield.png">
 
 **Implicit heart** — `(x²+y²-1)³ − x²y³ = 0`:
 
-![Heart curve](images/08_graph2d_heart.png)
+<img width="700" alt="Heart curve" src="images/08_graph2d_heart.png">
 
 ### Matplotlib toolbar
 
@@ -48,7 +48,7 @@ The toolbar above the plot lets you zoom (rectangle), pan, undo, and **save the 
 
 Five rendering kinds.
 
-![3D peaks function](images/09_graph3d_peaks.png)
+<img width="700" alt="3D peaks function" src="images/09_graph3d_peaks.png">
 
 | Kind | Input | Renders |
 |------|------|--------|
@@ -62,7 +62,7 @@ Five rendering kinds.
 
 A way to visualize a complex function as a single image. Hue encodes argument, brightness encodes magnitude. Zeros appear as dark spots; poles as bright spots.
 
-![Complex domain coloring of z³−1](images/10_graph3d_complex.png)
+<img width="700" alt="Complex domain coloring of z³−1" src="images/10_graph3d_complex.png">
 
 Try these in the **Pick example** dropdown:
 - `z^2` (basic squaring map)

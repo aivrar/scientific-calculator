@@ -6,7 +6,7 @@
 
 Drop a CSV on it and it profiles your data. Click "Mandelbrot" and zoom into it with your mouse. Type `integrate(sin(x)/x, x)` and watch the symbolic result render in LaTeX. Slide the Fourier slider and watch a square wave assemble itself from sine waves. Everything that used to live in five different apps is now one button-click away.
 
-![Super Calculator hero](docs/images/16_demo_newton.png)
+<img width="900" alt="Super Calculator hero" src="docs/images/16_demo_newton.png">
 
 ## Quick Start
 
@@ -27,43 +27,43 @@ The app opens to the Calculator. Try clicking through the 9 tabs across the top,
 ### 🧮 Calculator
 Scientific arithmetic with full sympy backend. Trig (deg/rad toggle), logs, factorials, complex numbers, every Greek constant. One-click **Functions** and **Constants** dropdowns insert 30+ extra math functions and 17 physical constants directly into the display. Side panel shows live history and named variables.
 
-![Calculator](docs/images/01_calculator.png)
+<img width="700" alt="Calculator" src="docs/images/01_calculator.png">
 
 **Programmer mode** swaps the keypad to a bitwise layout — hex A–F digits, AND/OR/XOR/NOT/shift, and BIN/OCT/HEX base prefixes. Results show simultaneously in all four bases.
 
-![Programmer mode](docs/images/02_calculator_programmer.png)
+<img width="700" alt="Programmer mode" src="docs/images/02_calculator_programmer.png">
 
 ### ƒ(x) Symbolic / CAS
 SymPy-powered computer algebra: simplify, expand, factor, differentiate, integrate (definite and indefinite), limits, series, solve, substitute. Results render in pretty LaTeX. One-click export as Python code or LaTeX. Quick-pick chips for common points (0, π/2, π, ∞, …) and a curated dropdown of example expressions.
 
-![Taylor series](docs/images/03_symbolic_series.png)
+<img width="700" alt="Taylor series" src="docs/images/03_symbolic_series.png">
 
 ### 📈 Graph 2D
 Six plot kinds in one tab: **explicit** `y=f(x)` with multi-curve overlay, **parametric** `(x(t), y(t))`, **polar** `r=f(θ)`, **implicit** `F(x,y)=0`, **vector fields** (with streamlines), and **slope fields** for ODEs. Each kind has a curated *Pick example* dropdown with classics like the heart curve, butterfly curve, rose patterns, and the folium of Descartes.
 
-![Explicit plot](docs/images/05_graph2d_explicit.png)
+<img width="700" alt="Explicit plot" src="docs/images/05_graph2d_explicit.png">
 
-![Polar rose](docs/images/06_graph2d_polar.png)
+<img width="700" alt="Polar rose" src="docs/images/06_graph2d_polar.png">
 
-![Vector field](docs/images/07_graph2d_vfield.png)
+<img width="700" alt="Vector field" src="docs/images/07_graph2d_vfield.png">
 
-![Heart curve](docs/images/08_graph2d_heart.png)
+<img width="700" alt="Heart curve" src="docs/images/08_graph2d_heart.png">
 
 ### 🧊 Graph 3D
 Surfaces, wireframes, filled contours, 3D parametric curves (torus knots, spirals), and **complex domain coloring** (HSV phase plots of complex functions). Drag to rotate, zoom with the toolbar.
 
-![3D peaks](docs/images/09_graph3d_peaks.png)
+<img width="700" alt="3D peaks" src="docs/images/09_graph3d_peaks.png">
 
-![Complex domain coloring](docs/images/10_graph3d_complex.png)
+<img width="700" alt="Complex domain coloring" src="docs/images/10_graph3d_complex.png">
 
 ### 📊 Data
 Drop any CSV on the drop zone — the app auto-detects column types, computes summary statistics, and offers histogram / scatter / line / bar / box / scatter-matrix / correlation-heatmap plots. Built-in regression fits: linear, polynomial (2/3), exponential, logarithmic, and power — with the equation and R² overlaid. Built-in iris-like sample loads in one click for trying it out.
 
-![Data scatter with regression](docs/images/11_data_scatter.png)
+<img width="700" alt="Data scatter with regression" src="docs/images/11_data_scatter.png">
 
-![Correlation heatmap](docs/images/12_data_correlation.png)
+<img width="700" alt="Correlation heatmap" src="docs/images/12_data_correlation.png">
 
-![Scatter matrix](docs/images/13_data_scattermatrix.png)
+<img width="700" alt="Scatter matrix" src="docs/images/13_data_scattermatrix.png">
 
 ### ✨ Demos
 **17 interactive visualizations**, every one click-to-explore:
@@ -88,36 +88,36 @@ Drop any CSV on the drop zone — the app auto-detects column types, computes su
 | 🎢 Bifurcation | Logistic map; click to zoom into period-doubling regions |
 | 🔄 Newton's fractal | Polynomial dropdown (8 polynomials) + iteration slider |
 
-![Mandelbrot zoom](docs/images/14_demo_mandelbrot.png)
+<img width="700" alt="Mandelbrot zoom" src="docs/images/14_demo_mandelbrot.png">
 
-![Newton's fractal](docs/images/16_demo_newton.png)
+<img width="700" alt="Newton's fractal" src="docs/images/16_demo_newton.png">
 
-![Chaos game](docs/images/17_demo_sierpinski.png)
+<img width="700" alt="Chaos game" src="docs/images/17_demo_sierpinski.png">
 
-![Buffon's needle](docs/images/18_demo_buffon.png)
+<img width="700" alt="Buffon's needle" src="docs/images/18_demo_buffon.png">
 
-![Monte Carlo π](docs/images/19_demo_mcpi.png)
+<img width="700" alt="Monte Carlo π" src="docs/images/19_demo_mcpi.png">
 
-![Fourier series](docs/images/20_demo_fourier.png)
+<img width="700" alt="Fourier series" src="docs/images/20_demo_fourier.png">
 
-![Lorenz attractor](docs/images/24_demo_lorenz.png)
+<img width="700" alt="Lorenz attractor" src="docs/images/24_demo_lorenz.png">
 
-![Double pendulum chaos](docs/images/25_demo_pendulum.png)
+<img width="700" alt="Double pendulum chaos" src="docs/images/25_demo_pendulum.png">
 
 ### 📂 Templates
 18 click-to-load examples spanning algebra, calculus, ODEs, physics, statistics, finance, and number theory. Click → loads the example into the relevant tab.
 
-![Templates](docs/images/31_templates.png)
+<img width="700" alt="Templates" src="docs/images/31_templates.png">
 
 ### 📏 Units & Constants
 7 unit categories (length / mass / time / energy / pressure / data / angle), 17 physical constants table with descriptions. Double-click any constant to insert it into the calculator.
 
-![Units](docs/images/32_units.png)
+<img width="700" alt="Units" src="docs/images/32_units.png">
 
 ### ⚙️ Settings
 4 themes (Dark, Light, Synthwave, Solarized) applied to both Tk widgets and matplotlib at once. Angle-mode default (deg/rad), display precision (4–30 significant digits).
 
-![Settings](docs/images/33_settings.png)
+<img width="700" alt="Settings" src="docs/images/33_settings.png">
 
 ## Requirements
 

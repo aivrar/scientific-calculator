@@ -1,6 +1,6 @@
 # ⚙️ Settings
 
-![Settings](images/33_settings.png)
+<img width="700" alt="Settings" src="images/33_settings.png">
 
 ## Theme
 

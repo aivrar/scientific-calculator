@@ -2,7 +2,7 @@
 
 Two panels: a unit converter on the left, a physical constants table on the right.
 
-![Units & Constants](images/32_units.png)
+<img width="700" alt="Units & Constants" src="images/32_units.png">
 
 ## Unit converter
 

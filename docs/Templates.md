@@ -2,7 +2,7 @@
 
 Click-to-load examples covering algebra, calculus, ODEs, physics, statistics, finance, and number theory. Each card has a name, a one-line description, and a **Load** button that opens the example in the relevant tab.
 
-![Templates](images/31_templates.png)
+<img width="700" alt="Templates" src="images/31_templates.png">
 
 ## Inventory
 

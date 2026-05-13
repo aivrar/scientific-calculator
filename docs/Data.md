@@ -2,7 +2,7 @@
 
 Drop a CSV on the drop zone and the app auto-profiles your data: detects column types, computes summary statistics, and offers a menu of plots and regression fits.
 
-![Data scatter with regression](images/11_data_scatter.png)
+<img width="700" alt="Data scatter with regression" src="images/11_data_scatter.png">
 
 ## Loading data
 
@@ -35,9 +35,9 @@ Pick from the **Plot** dropdown:
 | `scatter-matrix` | Pairs plot of up to 5 numeric columns |
 | `correlation heatmap` | Pearson correlation matrix with values overlaid |
 
-![Correlation heatmap](images/12_data_correlation.png)
+<img width="700" alt="Correlation heatmap" src="images/12_data_correlation.png">
 
-![Scatter matrix](images/13_data_scattermatrix.png)
+<img width="700" alt="Scatter matrix" src="images/13_data_scattermatrix.png">
 
 ## Regression fits
 

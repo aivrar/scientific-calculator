@@ -2,7 +2,7 @@
 
 The default tab. Standard scientific arithmetic plus programmer mode, history, named variables, constants, and an "anything that takes a function" dropdown.
 
-![Calculator](images/01_calculator.png)
+<img width="700" alt="Calculator" src="images/01_calculator.png">
 
 ## Layout
 
@@ -43,7 +43,7 @@ The expression parser is sympy-based — safe (no `eval`) and forgiving:
 
 Click **Programmer mode** to swap the keypad to a bitwise layout.
 
-![Programmer mode](images/02_calculator_programmer.png)
+<img width="700" alt="Programmer mode" src="images/02_calculator_programmer.png">
 
 - Hex digits **A–F** insert literally; `AC` clears (renamed from `C` to avoid clobbering the hex digit).
 - **BIN / OCT / HEX** insert the `0b` / `0o` / `0x` Python-style prefix.
